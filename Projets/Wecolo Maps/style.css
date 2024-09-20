@@ -1,0 +1,150 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    #map {
+    height: 100%;
+    }
+    
+    /* Optional: Makes the sample page fill the window. */
+    html,
+    body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fbbb1a;
+    scrollbar-color: #fbbb1a;
+    }
+    body{
+      display: flex;
+    }
+    
+    .Geolocalisation{
+      height: 40px;
+      width: 40%;
+      background: #fbbb1a;
+      color: #24253b;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-family: Roboto, sans-serif;
+      border: 0;
+      border-radius: 3px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.48);
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+
+    body {
+      margin: 0;
+    }
+    
+    .sb-title {
+      position: relative;
+      top: -0.8rem;
+      font-family: Roboto, sans-serif;
+      font-weight: 500;
+    }
+    
+    .sb-title-icon {
+      position: relative;
+      top: -0.33rem;
+    }
+    
+    .card-container {
+      display: flex;
+      height: 100%;
+      width: 100%;
+   }
+   
+   .panel {
+      background:#24253b;
+      width: 30%;
+      border-right: 0.25rem solid #fbbb1a;
+      padding: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      color: white;
+    }
+    
+    .half-input-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .half-input {
+      max-width: 120px;
+    }
+    
+    .map {
+      width: 100%;
+    }
+    
+    h2 {
+      margin: 0;
+      font-family: Roboto, sans-serif;
+    }
+    
+    input {
+      height: 30px;
+    }
+    
+    input {
+      border: 0;
+      border-bottom: 1px solid #fbbb1a;
+      font-size: 14px;
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      background: #24253b;
+      color: white;
+    }
+    
+    input:focus::placeholder {
+      color: #fbbb1a;
+    }
+    
+    .button-cta {
+      height: 3rem;
+      width: 40%;
+      color: #24253b;
+      background: #fbbb1a;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-family: Roboto, sans-serif;
+      border: 0;
+      border-radius: 3px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.48);
+      cursor: pointer;
+      font-weight: bold;
+    }
+   
+   .favoriIcon{
+      border : none;
+      background : none;
+   }
+
+   /*Recherche*/
+   .Recherche_Adresse{
+     font-size: 1rem;
+     margin-bottom: 6rem;
+     background: #fbbb1a;
+     color : #24253b;
+     border-bottom: 3px solid #24253b;
+     width: 20%;
+   }
+
+   .formulaire{
+     display: flex;
+   }
+  textarea{
+    background: rgb(237, 237, 237);
+    color: #24253b;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .illustration{
+    border-bottom: none !important;
+  }
+  label{
+    font-size:1rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }

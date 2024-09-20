@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Wecolo</title>
+    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <!--Ajoutez votre header-->
+</header>
+<body>
+  <input
+  id="pac-input"
+  class="Recherche_Adresse"
+  type="text"
+  placeholder="Votre Adresse"
+  />
+<div class="card-container">
+    <form class="panel">
+      <div>
+        <span class="sb-title">Informations sur le séjour</span>
+      </div>
+        <label for="location">Adresse :</label>
+        <input type="text" placeholder="Rue de Rivoli" id="location"/>
+        <label for="locality">Ville :</label>
+        <input type="text" placeholder="Paris" id="locality"/>
+        <div class="half-input-container">
+          <div>
+            <label for="administrative_area_level_1">Région ou État (Facultatif) :</label>
+            <input type="text" class="half-input" placeholder="Texas" id="administrative_area_level_1"/>
+          </div>
+          <div>
+            <label for="postal_code">Code Postal :</label>
+            <input type="text" class="half-input" placeholder="75001" id="postal_code"/>
+          </div>
+        </div>
+        <label for="country">Pays :</label>
+        <input type="text" placeholder="France" id="country"/>
+        <div class="half-input-container">
+          <div>
+            <label for="date_debut">Date de début :</label>
+            <input type="date" placeholder="16/12/2021"id="date_debut">
+          </div>
+          <div>
+            <label for="date_fin">Date de fin :</label>
+            <input type="date" placeholder="16/12/2021"id="date_fin">
+          </div>
+        </div>
+        <div class="half-input-container">
+          <label for="Prix">Prix :</label>
+          <div>
+            <input type="number" placeholder="500" id="Prix"><span>€</span>
+          </div>
+          </div>
+        <label for="Titre">Titre du séjour :</label>
+        <input type="text" placeholder="Dans la vie d'un agriculteur" id="Titre">
+        <label for="Description"> Description :</label>
+        <textarea id="Description" style="height: 4rem;" placeholder="Trajets, Activité, Âge requis etc."></textarea>
+        <label for="illustration">Image d'illustration du sejour :</label>
+        <input type="file" class="illustration" id="illustration" accept="image/png, image/jpeg">
+        <button class="button-cta">Demande d'ajout de l'annonce :</button>
+    </form>
+  <div class="map" id="map"></div>
+</div>
+</body>
+
+<!--////////////////////////////////////////////// CLE_API & ID_MAP ////////////////////////////////////////////////////////////////-->
+  <script> var idMap = 'f5a9614ee7c4612d';</script>
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPcLp5yh3-1QYPK1ilid43RiXFQnSbuCQ&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cABC"></script>
+  <script src="script.js"></script>
+</html>

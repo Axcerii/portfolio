@@ -1,0 +1,492 @@
+/* Commun à tous */
+*{
+  margin: 0;
+}
+html{
+  overflow-x: hidden;
+}
+
+h2{
+  font-family: 'Rem';
+  font-weight: 800;
+  text-align: center;
+  font-size: 4em;
+  margin-top: 10%;
+  margin-bottom: 1em;
+}
+
+p{
+  font-family: 'Rem';
+}
+
+a:active{
+  color: white;
+}
+
+a{
+  color: white;
+}
+
+a:visited{
+  color: white;
+}
+
+a:hover{
+  color:rgb(209, 209, 209);
+}
+
+/* Vidéo */
+#first_image{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+}
+
+.Image_Loading{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  z-index: -1;
+
+  transition: all ease-in-out 300ms;
+}
+
+/* A propos & Diplome */
+
+.apropos{
+  margin-top: 62%;
+  font-family: 'REM';
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.diplome{
+  font-family: 'REM';
+  display: flex;
+  font-weight: bold;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.apropos-text{
+  width: 30%;
+  text-align: justify;
+  font-size: 1.5em;
+  margin: auto 5% auto 10%;
+  flex: 1;
+}
+
+.apropos-text-bienvenue{
+  width: 80%;
+  font-size: 1.5em;
+  text-align: center;
+  margin: auto auto;
+  font-weight: bold;
+}
+
+.apropos-image{
+  text-align: right;
+  flex: 1;
+  padding: 5%;
+}
+
+.apropos-img{
+width: 100%;
+height: auto;
+}
+
+
+.diplome-text > p{
+  margin-top: 3em;
+}
+
+.diplome-img{
+  width: 75%;
+}
+
+/* Passions */
+
+.passions{
+  position: relative;
+  display: flex;
+  width: 300%;
+  margin: auto auto 0 -100%;
+  
+  transition: 300ms all ease-in-out;
+}
+
+.passion-slides{
+  position: relative;
+  width: 25%;
+  margin: auto;
+  display: flex;
+
+  justify-content: space-around;
+}
+
+#dnd{
+  flex-direction: column-reverse;
+}
+
+.pays-aeteria{
+  width: 35%;
+  display: flex;
+  margin: auto;
+
+  margin-top: 2em;
+}
+
+.passion-slides > p {
+  text-align: justify;
+  width: 50%;
+
+  font-size: 1.2em;
+  margin: auto;
+}
+
+.passion-slides > button{
+  position: absolute;
+  top: -1.1em;
+  right: 1em;
+  
+  background-color: transparent;
+  border: none;
+  font-size: 5em;
+  padding: 10px;
+
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  transition: 300ms all ease-in-out ;
+}
+
+.passion-slides > button:hover{
+  right: 1.2em;
+  color: #7e7e7e;
+}
+
+.miku{
+  width: 20%;
+}
+
+.passion-centre{
+  display: flex;
+  width: 25%;
+  margin: auto;
+}
+
+.passion-droite{
+  display: flex;
+  width: 25%;
+  margin: auto;
+}
+
+.passion{
+  flex: 1;
+  display: flex;
+  box-sizing: content-box;
+  padding: 3em;
+  border-radius: 2em;
+  border: #333 1px solid;
+
+  width: 50%;
+
+  box-shadow: inset 0 0 2em rgba(0, 0, 0, 0.5);
+  
+  transition: 300ms all ease-in-out;
+
+}
+
+.passion::before, button::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #BD0029 ;
+}
+
+.passion:not(:last-child) {
+  margin-right: 5%;
+}
+
+.passion > p{
+  font-size: 2em;
+  text-align: justify;
+  margin: auto auto;
+  width: 60%;
+  margin-left: 2em;
+}
+
+.passion:hover{
+  cursor: pointer;
+  box-shadow: inset 0 0 2.5em rgba(0, 0, 0, 0.8);
+}
+
+.passion-image{
+  width: 35%;
+}
+
+.passion-img{
+  width: 100%;
+  height: auto;
+}
+
+/* Projets */
+
+#projets{
+  margin-top: 0.5em;
+}
+
+.projets{
+  display: flex;
+  width: 80%;
+  margin: auto auto;
+  flex-direction: column;
+}
+
+.projets-row{
+  display: flex;
+  width: 100%;
+  margin: auto auto;
+  flex-direction: flex;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.projet-cadre{
+  width: 30vh;
+  height: 30vh;
+  border-radius: 20%;
+  box-shadow: 0.8vh 0.8vh;
+  position: relative;
+  cursor: pointer;
+}
+
+.projet-cadre > img{
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 20%;
+  object-fit: cover;
+}
+
+.projet{
+  display: flex;
+  margin: auto auto;
+  width: 33%;
+}
+
+.projet-cadre::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 20%;
+}
+
+.projet-cadre:hover::before {
+  opacity: 1;
+}
+
+.themes{
+  display: flex;
+  flex-direction: column;
+  margin-right: 2%;
+}
+
+.themes > div{
+  display: flex;
+  width: 7vh;
+  height: 7vh;
+  border: black solid 0.2vh;
+  border-radius: 100%;
+  margin-top: 2vh;
+}
+
+.themes > div > img{
+  width: 75%;
+  height: auto;
+  margin: auto auto;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  padding: 30px 40px;
+}
+
+/* Invitation à scroll */
+
+.scroll-invitation {
+    position: fixed;
+    bottom: 0px;
+    padding-bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'REM';
+    font-weight: 100;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+    z-index: -1;
+  }
+  
+  .arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 10px 0 10px;
+    border-color: #fff transparent transparent transparent;
+    margin-top: 10px;
+    animation: arrow 1s infinite;
+  }
+  
+
+  .diplome-text-br{
+    display: none;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  /* Écran */
+
+  .ecran{
+    position: fixed;
+    width: 70%;
+    height: 95%;
+
+    top: -110%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    background-color: #1b1b1b;
+
+    border-radius: 5em;
+
+    z-index: 1000;
+
+    border: 4px white solid;
+
+    transition: all ease-in-out 400ms;
+
+    overflow-y: scroll;
+  }
+  .background-ecran{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    opacity: 0;
+
+    transition: all ease-in-out 400ms;
+  }
+
+
+  @media screen and (max-width: 768px) {
+
+    .scroll-invitation{
+      display: none;
+    }
+
+    .apropos{
+      width: 82.5%;
+      margin-left: 0%;
+      flex-direction: column-reverse;
+    }
+
+    .apropos > div{
+      width: 100%;
+    }
+
+    .apropos-image-diplome{
+      display: none;
+    }
+
+    .diplome{
+      width: auto;
+    }
+
+    .diplome-text-br{
+      display: block;
+    }
+
+    .diplome-text-date{
+      text-decoration: underline;
+    }
+
+    .passions{
+      width: auto;
+      flex-direction: column;
+    }
+
+    .passion{
+      flex-direction: column;
+    }
+
+    .passion > p{
+      text-align: left;
+    }
+
+    .passion-image{
+      margin: 10% auto 15% auto;
+    }
+
+    .projets-row{
+      flex-direction: column;
+    }
+
+    .projets{
+      width: auto;
+    }
+
+    .projet{
+      width: auto;
+    }
+
+    .projet:not(:last-child){
+      margin-bottom: 15%;
+    }
+  }

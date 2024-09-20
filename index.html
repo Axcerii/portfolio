@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=REM">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=REM:wght@100;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <title>Hugo Malezet</title>
+</head>
+<body>
+
+    <header class='pc-header'>
+        <a href="#first_image" class="Logo">
+           Hugo Malezet
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#first_image">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Header Mobile -->
+
+      <header class="mobile-header">
+        <nav>
+          <a href="#first_image" class="Logo logo-mobile">
+            Hugo Malezet
+          </a>
+          <div class="mobile-header-image">
+            <img  id='menu-burger' src="images/burger.svg" alt="Menu header" onclick='openHeader()'>
+          </div>
+        </nav>
+        <nav>
+          <ul id="nav-header">
+            <li><a href="#first_image" onclick="closeHeader()">Accueil</a></li>
+            <li><a href="#apropos" onclick="closeHeader()">À propos</a></li>
+            <li><a href="#projets" onclick="closeHeader()">Projets</a></li>
+            <li><a href="#contact" onclick="closeHeader()">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <img src="images/Frame 1.png" alt="Carte du Royaume Fictif Augeaime" class="Image_Loading" id="loading_image">      
+      <video playsinline autoplay muted loop poster="images/Frame 1.png" id="first_image">
+        <source src="images/Map.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas les vidéos.
+      </video>
+
+      <div class="scroll-invitation">
+        <p>Faites défiler pour en savoir plus</p>
+        <div class="arrow"></div>
+      </div>
+
+
+      <div class="apropos" id="apropos">
+        <div class="apropos-text">
+          <p class="apropos-text-bienvenue">Bienvenue sur mon profil !</p>
+          <p>
+            Je m'appelle Hugo, je suis un passionné du développement web avec une créativité débordante et une soif constante d'apprendre.
+            Je suis très multifonction et possède de bonne connaissance dans beaucoup de domaine différent, grâce à mon diplôme en multimédia mon arbre de compétence s'étend au dela du développement avec du graphisme, de la communication voire de l'audiovisuel ! 
+          </p>
+        </div><!-- apropos-text -->
+        <div class="apropos-image">
+          <img src="images/Photo2.png" alt="Photographie" class='apropos-img'>
+        </div>
+      </div><!-- apropos -->
+
+      <div class="diplome">
+        <div class="apropos-image apropos-image-diplome">
+          <img src="images/Diplôme.png" alt="Icone de diplôme" class="apropos-img diplome-img">
+        </div>
+        <div class="apropos-text diplome-text">
+          <p><span class="diplome-text-date">2024-2025</span> | <br class="diplome-text-br"> My Digital School, Paris, Bachelor en Développement Web </p>
+          <p><span class="diplome-text-date">2023-2024</span> | <br class="diplome-text-br"> POEC DOTNET ENI École Informatique </p>
+          <p><span class="diplome-text-date">2020-2022</span> | <br class="diplome-text-br"> DUT Métiers du Multimédia et de l'Internet + Stage de validation 4 mois en développement web</p>
+          <p><span class="diplome-text-date">2018-2020</span> | <br class="diplome-text-br"> Baccalauréat S - Spécialité ISN Section Anglais Européenne</p>
+        </div>
+      </div>
+
+      <h2> Passions </h2>
+      
+      <div class="passions" id="passions">
+      
+        <section class="passion-slides">
+          <img src="images/39.svg" alt="Miku !" class="miku">
+          <p>Depuis près de 10 ans, je suis fasciné par la musique japonaise, une passion qui s'étend également à toute la culture nippone. Un fil turquoise est apparu dans mon univers, me guidant et influençant non seulement mon parcours artistique, mais aussi le monde de la composition orientale. Ma fascination pour la technologie Vocaloïd a éveillé en moi un désir d'explorer davantage les sciences et leur impact sur l'art. Que ce soit à travers la création d'algorithmes ou le développement de l'intelligence artificielle, ces technologies me captivent au point de m'en émerveiller et parfois même de me terrifier.          </p>
+          <button id="retour-gauche">🡐</button>
+        </section>
+
+      <section class="passion-centre">
+        <div class="passion" id="jpop"> 
+          <div class="passion-image">
+            <!-- Image créée par Pixel Perfect sous la license créative common -->
+            <img src="images/musical-note-red by Pixel perfect .png" alt="Note de musique écarlate" class="passion-img"> 
+          </div>
+          <p>Musique Japonaise Pop / Rock actuelle
+          </p>
+        </div>
+        <div class="passion" id="lastfragment">
+          <div class="passion-image">
+            <img src="images/role-playing.png" alt="Icone d'un Dé de 20" class="passion-img"> 
+          </div>
+          <p> Jeu de rôle papier, écriture et world building </p>
+        </div>
+      </section>
+
+      <section class="passion-slides" id="dnd">
+        <img src="images/fleurs.svg" alt="Pays d'Aeteria" class="pays-aeteria">
+        <p>Ma passion pour le world building et les jeux de rôle papier remonte à presque toujours. Cette passion m'a conduit à créer un jeu de rôle traditionnel, dans la lignée de Donjons & Dragons, entièrement conçu de A à Z. J'ai pris en charge tout, de l'élaboration de l'histoire et des personnages à la création des assets graphiques et au développement du site internet associé, sans oublier le game design. Mon objectif est d'immerger mes joueurs dans un monde alternatif, régi par des règles qui permettent de découvrir ce qui se passe dans mon esprit, tout en leur offrant une expérience de jeu riche en émotions et en aventures, le tout depuis le confort de leur siège. Ce projet est tellement vaste qu'il est difficile de résumer tout ce que j'ai accompli ici. Vous trouverez plus d'informations à ce sujet dans l'onglet "Projets" de mon portfolio ;)</p>
+        <button id="retour-droit">🡐</button>
+      </section>
+
+      </div>
+      <!-- Passions -->
+
+      <h2 id="projets"> Projets </h2>
+
+      <div class="projets">
+        <div class="projets-row">
+          <!--  -->
+          <div class="projet">
+            <div class="themes">
+              <div>
+                <img src="images/Web Dev.png" alt="Icone Developpement Web">
+              </div>
+              <div>
+                <img src="images/Graphisme  par Lagot Desin.png" alt="Icone de Graphisme">
+              </div>
+              <div>
+                <img src="images/Writing.png" alt="Icone d'écriture">
+              </div>
+            </div>
+            <div class="button-projet">
+                <button class="projet-cadre" onclick="afficherEcran('lastfragment.html')">
+                  <img src="images/LF.png" alt="Last Fragment">
+                </button>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="projet">
+            <div class="themes">
+              <div>
+                <img src="images/Graphisme  par Lagot Desin.png" alt="Icone de Graphisme">
+              </div>
+              <div>
+                <img src="images/Writing.png" alt="Icone d'écriture">
+              </div>
+              <div>
+              </div>
+            </div>
+            <div class="button-projet">
+              <a href="images/Royaume d'Augeaime.jpg" target="_blank">
+                <button class="projet-cadre">
+                  <img src="images/Royaume d'Augeaime.jpg" alt="Royaume d'Augeaime">
+                </button>
+              </a>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="projet">
+            <div class="themes">
+              <div>
+                <img src="images/Graphisme  par Lagot Desin.png" alt="Icone de Graphisme">
+              </div>
+              <div>
+                <img src="images/math.png" alt="Icone de Maths">
+              </div>
+              <div>
+              </div>
+            </div>
+            <div class="button-projet">
+              <a href="images/SW RNG Fiche finale Troisième Jet.jpg" target="_blank">
+                <button class="projet-cadre">
+                  <img src="images/SW RNG Fiche finale Troisième Jet.jpg" alt="Fiche Summoners War RNG">
+                </button>
+              </a>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+
+
+        <div class="projets-row">
+          <div class="projet">
+            <div class="themes">
+              <div>
+                <img src="images/Web Dev.png" alt="Icone Developpement Web">
+              </div>
+              <div>
+                <img src="images/Graphisme  par Lagot Desin.png" alt="Icone de Graphisme">
+              </div>
+              <div>
+              </div>
+            </div>
+            <div class="button-projet">
+              <a href="Projets/Tower Defense/tower-defence/index.html" target="_blank">
+                <button class="projet-cadre">
+                  <img src="images/TD.png" alt="Tower Defense">
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="projet">
+            <div class="themes">
+              <div>
+                <img src="images/Web Dev.png" alt="Icone Developpement Web">
+              </div>
+              <div>
+              </div>
+              <div>
+              </div>
+            </div>
+            <div class="button-projet">
+              <a href="Projets/Wecolo Maps/wecolo.html" target="_blank">
+                <button class="projet-cadre">
+                  <img src="images/google map API.png" alt="Carte Wecolo">
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="background-ecran" id="background-ecran">
+
+      </div>
+      <div class="ecran" id="ecran">
+        
+      </div>
+
+      <footer id="contact">
+        <p>&copy; 2024 Hugo Malezet</p>
+        <nav>
+          <p>Mail : malezethp@gmail.com</p>
+          <p>LinkedIn : <a href="https://www.linkedin.com/in/hugo-malezet-a4a8821b9/" class="linkedin" target='_blank'>Hugo Malezet</a></p>
+          <p>Discord : ryrry</p>
+        </nav>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/passion.js"></script>
+    <script src="js/projets.js"></script>
+</body>
+</html>
