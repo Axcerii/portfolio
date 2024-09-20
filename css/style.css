@@ -407,7 +407,18 @@ footer a:hover {
     transition: all ease-in-out 400ms;
 
     overflow-y: scroll;
+
+    padding: 2em;
+    box-sizing: border-box;
+
+    scrollbar-color: grey transparent;
+    scrollbar-width: thin;
   }
+
+  ::-webkit-scrollbar-track{
+    max-height: 60%;
+  }  
+
   .background-ecran{
     position: fixed;
     width: 100%;
