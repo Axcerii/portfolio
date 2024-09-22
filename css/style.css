@@ -6,6 +6,10 @@ html{
   overflow-x: hidden;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 h2{
   font-family: 'Rem';
   font-weight: 800;
@@ -119,7 +123,7 @@ height: auto;
   width: 300%;
   margin: auto auto 0 -100%;
   
-  transition: 300ms all ease-in-out;
+  transition: 400ms all ease-in-out;
 }
 
 .passion-slides{
@@ -387,37 +391,48 @@ footer a:hover {
 
   /* Écran */
 
-  .ecran{
+  .container-ecran{
+    overflow: scroll;
     position: fixed;
     width: 70%;
     height: 95%;
-
+  
     top: -110%;
     left: 50%;
-
+  
     transform: translate(-50%, -50%);
     background-color: #1b1b1b;
-
+  
     border-radius: 5em;
-
+  
     z-index: 1000;
-
+  
     border: 4px white solid;
-
+  
     transition: all ease-in-out 400ms;
+  
+    overflow: hidden;
+    
+    padding: 4em;
+    box-sizing: border-box;
+  }
+.container-ecran > button{
+  top: 7%;
+  right: 7%;
+  width: 3vw;
+  height: 3vw;
+
+  position: absolute;
+}
+  .ecran{
+    width: 100%;
+    height: 100%;
 
     overflow-y: scroll;
-
-    padding: 2em;
-    box-sizing: border-box;
 
     scrollbar-color: grey transparent;
     scrollbar-width: thin;
   }
-
-  ::-webkit-scrollbar-track{
-    max-height: 60%;
-  }  
 
   .background-ecran{
     position: fixed;
@@ -435,6 +450,73 @@ footer a:hover {
     transition: all ease-in-out 400ms;
   }
 
+  /* Tooltip */
+
+  .themes > div{
+    position: relative;
+    cursor: help;
+  }
+
+  .themes > div:hover > .tooltip{
+    display: block;
+  }
+
+  .tooltip{
+    font-size: 70%;
+    position: absolute;
+
+    width: 120%;
+
+    top: -30%;
+    left: 50%;
+
+    transform: translateX(-50%);
+    text-align: center;
+
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2px;
+    border-radius: 1em;
+
+    display: none;
+  }
+
+  /* Écran Détail */
+
+  
+  .technologie{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+
+.technologie > li{
+    list-style-type: none;
+    width: 20%;
+    margin-left: 2em;
+
+}
+
+.technologie > li >img{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+
+}
+
+.asterix{
+    font-style: italic;
+    font-size: 0.5em;
+    margin-top: 2em;
+    color: grey;
+}
+
+
+  
 
   @media screen and (max-width: 768px) {
 
@@ -469,20 +551,54 @@ footer a:hover {
     }
 
     .passions{
-      width: auto;
-      flex-direction: column;
+      width: 300%;
     }
 
     .passion{
-      flex-direction: column;
+      width: auto;
+      flex-direction: column-reverse;
+
+      padding: 1.5em;
     }
 
     .passion > p{
-      text-align: left;
+      width: 90%;
+      margin: auto;
     }
 
     .passion-image{
-      margin: 10% auto 15% auto;
+      display: flex;
+      width: 100%;
+    }
+
+    .passion-image > img{
+      width: 30%;
+      margin: 1em auto;
+    }
+
+    .passion:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 2em;
+    }
+
+    .passion-centre{
+      flex-direction: column;
+      width: 90%;
+      margin: auto;
+    }
+
+    .passion-slides{
+      width: 100%;
+      flex-direction: column-reverse;
+    }
+
+    .passion-slides > p{
+      width: 80%;
+      font-size: 1em;
+    }
+
+    .miku{
+      margin: 2em auto;
     }
 
     .projets-row{
@@ -500,4 +616,17 @@ footer a:hover {
     .projet:not(:last-child){
       margin-bottom: 15%;
     }
+
+    .container-ecran{
+      width: 100%;
+      padding: 0;
+    }
+    .technologie > li{
+      margin-left: 0.5em;
+    }
+ 
+    .container-ecran > button{
+      width: 5vh;
+      height: 5vh;
+  }
   }

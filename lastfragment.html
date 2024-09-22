@@ -2,48 +2,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=REM:wght@100;800&display=swap" rel="stylesheet">
 </head>
 <div class="body-LF">
-    <a href="https://lastfragment.alwaysdata.net/index" target="_blank">
+    <a href="https://lastfragment.alwaysdata.net/index" target="_blank" class="header-LF">
         <img src="images/LFLogo.svg" alt="Logo de Last Fragment" class="Logo-LF">
+        <button>Accéder au projet</button>
     </a>
-    <p>
+    <p style="margin-top: 1em;">
         Last Fragment est un site web que j'ai entièrement développé en HTML, CSS, JavaScript (avec jQuery) et PHP, conçu comme un outil complet pour gérer mon Jeu de Rôle Papier.</p>
-    <p>Ce projet a débuté simple, mais il s'est progressivement complexifié. Il est mon outil indispensable pour mes sessions de jeux de rôles papiers</p>
+    <p>Ce projet a débuté simple, mais il s'est progressivement complexifié. Il est mon outil indispensable pour mes sessions de jeux de rôles papiers.</p>
     <p>Le site est composé de plusieurs pages, chacune ayant un rôle spécifique :</p>
     <br>
     <ul>
-        <li>Personnages : Cette section présente la liste de tous les personnages rencontrés par mes joueurs. Les images proviennent de divers artistes en ligne, certaines ont été retouchées, et d'autres sont générées par intelligence artificielle*. En cliquant sur un personnage, des informations détaillées ainsi qu'une description apparaissent. La gestion des personnages est assurée par une base de données, modifiable via un back-office réservé aux administrateurs.</li>
-        <li>Histoire : Ici, quelques points clés du lore sont exposés pour permettre aux nouveaux joueurs de s'immerger dans l'univers avant de rejoindre l'aventure. Certaines pages sont encore verrouillées, car mes joueurs n'ont pas encore exploré toutes les zones disponibles dans ce monde.</li>
-        <li>Outils : Cette section propose deux outils que j'utilise régulièrement. Le premier est un générateur de monstres qui crée des statistiques personnalisées en fonction de mes besoins grâce à des algorithmes aléatoires. Le second est un petit quiz qui révèle le pouvoir magique de naissance que quelqu’un aurait s'il était né dans l'univers de Last Fragment. Je vous invite à faire ce quiz ; aucune donnée n'est stockée, mais connaître votre résultat pourrait susciter des discussions intéressantes !</li>
-        <li>Profil : Accessible uniquement après connexion (un compte invité est disponible), cette page affiche les statistiques du joueur, ses objets, équipements, passifs et compétences. Le joueur peut modifier ses équipements à tout moment.</li>
+        <br><li>Personnages : Cette section présente la liste de tous les personnages rencontrés par mes joueurs. Les images proviennent de divers artistes en ligne, certaines ont été retouchées, et d'autres sont générées par intelligence artificielle*. En cliquant sur un personnage, des informations détaillées ainsi qu'une description apparaissent. La gestion des personnages est assurée par une base de données, modifiable via un back-office réservé aux administrateurs.</li>
+        <br><li>Histoire : Ici, quelques points clés du lore sont exposés pour permettre aux nouveaux joueurs de s'immerger dans l'univers avant de rejoindre l'aventure. Certaines pages sont encore verrouillées, car mes joueurs n'ont pas encore exploré toutes les zones disponibles dans ce monde.</li>
+        <br><li>Outils : Cette section propose deux outils que j'utilise régulièrement. Le premier est un générateur de monstres qui crée des statistiques personnalisées en fonction de mes besoins grâce à des algorithmes aléatoires. Le second est un petit quiz qui révèle le pouvoir magique de naissance que quelqu’un aurait s'il était né dans l'univers de Last Fragment. Je vous invite à faire ce quiz ; aucune donnée n'est stockée, mais connaître votre résultat pourrait susciter des discussions intéressantes !</li>
+        <br><li>Profil : Accessible uniquement après connexion (un compte invité est disponible), cette page affiche les statistiques du joueur, ses objets, équipements, passifs et compétences. Le joueur peut modifier ses équipements à tout moment.</li>
     </ul>
     <br>
     <p>Enfin, le site cache plusieurs pages secrètes, notamment un back-office permettant de gérer les statistiques, d'ajouter des personnages ou des objets, ainsi qu'une page dédiée à la simulation des combats, qui enregistre également un historique des affrontements lors des sessions de jeu. Il y a aussi des pages d'énigmes que mes joueurs doivent résoudre pour obtenir des informations cruciales pour l'histoire.</p>
     <br>
-    <h2>Technologies utilisées :</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS (+JQuery sur certaines pages)</li>
-        <li>PHP</li>
-        <li>SQL</li>
+    <h3>Technologies utilisées :</h3>
+    <ul class="technologie">
+        <li><img src="Technologie/HTML.svg" alt="HTML"></li>
+        <li><img src="Technologie/CSS.svg" alt="CSS"></li>
+        <li><img src="Technologie/JS.svg" alt="JS"></li>
+        <li><img src="Technologie/jquery.svg" alt="JQuery"></li>
+        <li><img src="Technologie/PHP.svg" alt="PHP"></li>
+        <li><img src="Technologie/SQL.svg" alt="SQL"></li>
     </ul>
 
     <a href="https://lastfragment.alwaysdata.net/index" target="_blank" class="a-LF">Accéder au site</a>
+
+    <p class="asterix">*Mon point de vue sur l'usage d'IA génératrice d'images est assez précis, je suis globalement contre, mais tant que cela reste gratuit ET est utilisé dans un cadre purement personnel, je le tolère. J'évite de m'en servir inutilement, cependant je me rends aussi compte de son utilité dans mon travail et je m'exerce à cet exercice à contre-coeur.</p>
 </div>
 </html>
 
 <style>
+    .header-LF{
+        display: flex;
+    }
+
+    .header-LF > button{
+        border: none;
+        height: 30%;
+        color: white;
+        
+        font-family: REM;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-decoration: none;
+        background-color: #9E813B;
+        padding: 1em;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: auto;
+    }
+
+    .header-LF > button:hover{
+        background-color: #705c2c;
+    }
+
+    .header-LF > button:active{
+        background-color: #c29f4c;
+    }
+
     .body-LF{
         width: 80%;
         margin: auto;
         font-family: REM;
         font-size: 1.2em;
         color: white;
+        text-align: justify;
     }
     .Logo-LF{
         display: flex;
@@ -56,4 +86,14 @@
         color: white;
     }
 
+
+    @media screen and (max-width: 768px) {
+        .header-LF{
+            flex-direction: column;
+        }
+
+        .Logo-LF{
+            width: 50%;
+        }
+    }
 </style>

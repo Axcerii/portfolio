@@ -1,0 +1,121 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<div class="body-SW" style="background-color: #1b1b1b;">
+
+    <img src="images/projets/Summoners_War_Logo.png" alt="Logo Summoners War" class="Logo-SW">
+    <p>
+        Summoners War est un jeu mobile assez connu ayant une communauté dans laquelle j'ai fait partie. Dans le cadre de comprendre et de me développer dans le jeu, j'ai participé dans cette communauté en créant quelques petits designs que j'ai partagé sur Twitter. 
+    </p>
+
+    <div class="assets-SW">
+        <a href="https://x.com/ryrycochet/status/1630834500853719040" target="_blank">
+            <img src="images/projets/Eivor.jpg" alt="Eivor">
+        </a>
+        <p>Ceci est un graphique ayant des informations concernant un personnage ayant un fonctionnement particulier sur le jeu. Le personnage venant de sortir, beaucoup de personnes ne comprenait pas son fonctionnement, j'ai donc créé cette fiche avec des informations récoltés in-game.</p>
+    </div>
+
+    
+    <div class="assets-SW">
+        <a href="images/projets/SW RNG Fiche finale Troisième Jet.jpg" target="_blank">
+            <img src="images/projets/SW RNG Fiche finale Troisième Jet.jpg" alt="Graphique représentant la RNG de Summoners War">
+        </a>
+        <p>Voici une frise représentant différents cas où la RNG (Random Number Generator) occure avec les probabilités associées. Le design est intégralement fait par moi, avec des éléments provenant du jeu que j'ai refait en SVG.</p>
+    </div>
+
+    <div class="assets-SW">
+        <a href="https://x.com/ryrycochet/status/1767538653369115119/" target="_blank">
+            <img src="images/projets/CarteSW.png" alt="Carte Mei Hou Wang">
+        </a>
+        <p>Et ici est une carte de jeu réalisé dans le cadre d'un concours, le tout en reprenant leur style graphique et leurs images.</p>
+    </div>
+
+    <h3>Technologies utilisées :</h3>
+        <ul class="technologie">
+            <li><img src="Technologie/Photoshop.svg" alt="Photoshop"></li>
+            <li><img src="Technologie/Illustrator.svg" alt="Illustrator"></li>
+            <li><img src="Technologie/Krita.svg" alt="Krita"></li>
+            <li><img src="Technologie/Excel.svg" alt="Excel"></li>
+        </ul>
+</div>
+
+<style>
+    .body-SW{
+        width: 80%;
+        margin: auto;
+        font-family: REM;
+        font-size: 1.2em;
+        color: white;
+        text-align: justify;
+    }
+
+    .Logo-SW{
+        display: flex;
+        width: 45%;
+        margin: 0 auto 2em auto;
+    }
+
+    .assets-SW{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: 5em auto 0 auto;
+    }
+
+    .assets-SW > a{
+        width: 30%;
+        box-sizing: border-box;
+        padding: 1em;
+        border: white solid 2px;
+    }
+
+    .assets-SW > a > img{
+        width: 100%;
+    }
+
+    .assets-SW > p{
+        width: 50%;
+        margin: auto auto auto 20%;
+    }
+
+    .assets-SW:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+
+    .assets-SW:nth-child(odd) > p{
+        width: 50%;
+        margin: auto 20% auto auto;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .assets-SW{
+            flex-direction: column;
+        }
+
+        .assets-SW:nth-child(odd){
+            flex-direction: column;
+        }
+
+        .assets-SW > p{
+            width: 100%;
+            margin: 1em auto;
+            border-bottom: white solid 2px;
+            padding-bottom: 1em;
+        }
+
+        .assets-SW > a{
+            width: 100%;
+            margin: auto;
+        }
+
+        .assets-SW:nth-child(odd) > p{
+            width: 100%;
+            margin: 1em auto;
+            border-bottom: white solid 2px;
+            padding-bottom: 1em;
+        }
+    }
+</style>
