@@ -343,11 +343,7 @@ footer p {
 
 footer a:hover {
   text-decoration: underline;
-  top: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  padding: 30px 40px;
+  cursor: pointer;
 }
 
 /* Invitation à scroll */
